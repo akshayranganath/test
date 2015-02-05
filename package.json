@@ -6,10 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://akshayranganath:aks123ay@github.com/akshayranganath/test.git"
-  },
   "author": "Akshay Ranganath",
   "license": "MIT",
   "bugs": {
