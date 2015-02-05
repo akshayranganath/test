@@ -1,0 +1,9 @@
+<html><head><title>Profile Page</title><link rel="stylesheet" href="/css/style.min.css"><script type="text/javascript" src="/scripts/jquery.js"></script><script type="text/javascript">$(document).ready(function(){
+				$.getJSON("/profile.json",function(data) {
+					$("#name").text(data['name'])
+					$("#email").text(data['email'])
+					$("#phone").text(data["phone"])
+					$("#profile").html("<img src=\""+data["profile"]+"\" />")
+
+				});
+			});</script></head><body><table border="1"><tr><td>Name</td><td><span id="name"></span></td></tr><tr><td>Email</td><td><span id="email"></span></td></tr><tr><td>Phone</td><td><span id="phone"></span></td></tr><tr><td>Profile</td><td><span id="profile"></span></td></tr></table></body></html>
